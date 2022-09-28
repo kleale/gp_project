@@ -1,0 +1,60 @@
+@import url(../../../fonts.scss);
+
+.SelectYear {
+  $yearWidth: 80px;
+  position: relative;
+  z-index: 1;
+  .currentYear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "PT-Root-UI-Bold";
+    font-size: 14px;
+    line-height: 21px;
+    // width: $yearWidth;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .yearSelect {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(0,0,0, 0.2);
+    background-color: #fff;
+    // width: 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px 0;
+    padding: 2px;
+    border-radius: 4px;
+    overflow-y: scroll;
+    .year {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      text-align: center;
+      width: $yearWidth;
+      background-color: #fff;
+      font-family: "PT-Root-UI-Medium";
+      cursor: pointer;
+      user-select: none;
+      height: 21px;
+      border-radius: 4px;
+    }
+
+    .year:hover {
+      background-color: #0078d2;
+      color: #fff;
+
+    }
+
+    .year__selected {
+      background-color: #80bcde;
+      color: #fff;
+    }
+  }
+}

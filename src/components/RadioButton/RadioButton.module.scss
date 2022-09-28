@@ -1,0 +1,62 @@
+@import url(../../fonts.scss);
+
+.RadioButton {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 26px;
+  margin-right: 24px;
+  cursor: pointer;
+  font-family: "Inter-Regular";
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.RadioButton input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #0078d2;
+}
+
+.RadioButton:hover input ~ .checkmark {
+}
+
+.RadioButton input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.RadioButton input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.RadioButton .checkmark:after {
+  top: 4.5px;
+  left: 4.5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #0078d2;
+}

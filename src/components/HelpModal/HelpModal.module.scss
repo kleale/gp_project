@@ -1,0 +1,87 @@
+@import url(../../fonts.scss);
+
+.HelpModal {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  min-width: #{"max(100vw, 1920px)"};
+  min-height: #{"max(100vh, 1080px)"};
+  background-color: rgba(0, 32, 51, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal {
+    width: 996px;
+    height: 785px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 24px 30px;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+      font-family: "PT-Root-UI-Bold";
+      font-size: 18px;
+      height: 32px;
+      margin-bottom: 9px;
+      color: #0079be;
+    }
+
+    .columns {
+      display: flex;
+      column-gap: 30px;
+      margin-bottom: 27px;
+
+      .columnLeft,
+      .columnRight {
+        display: flex;
+        flex-direction: column;
+        row-gap: 22px;
+        width: 50%;
+      }
+
+      .helpBlock {
+        min-height: 175px;
+        width: 100%;
+        background-color: #ecf1f4;
+        border-radius: 10px;
+        padding: 26px 30px 20px 35px;
+
+        .helpBlock__header {
+          height: 43px;
+          font-family: "Inter-Bold";
+          font-size: 18px;
+          line-height: 27px;
+        }
+
+        .helpBlock__text {
+          font-family: "Inter-Regular";
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .closeModalButton {
+      padding: 0 20px;
+      color: #0078d2;
+      background-color: #fff;
+      border: 1px solid #0078d2;
+      border-radius: 4px;
+      width: 151px;
+      align-self: flex-end;
+      display: inline-block;
+      user-select: none;
+      cursor: pointer;
+
+      .closeModalButton__text {
+        font-family: "Inter-Regular";
+        font-size: 16px;
+        line-height: 40px;
+        color: #0078d2;
+      }
+    }
+  }
+}

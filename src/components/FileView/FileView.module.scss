@@ -1,0 +1,31 @@
+@import url(../../fonts.scss);
+
+.FileView {
+  display: flex;
+  font-family: "Inter-Regular";
+
+
+
+  .iconContainer {
+    padding: 0 8px;
+  }
+
+  .file {
+    .file__name {
+      font-size: 14px;
+      line-height: 17px;
+      color: #002033;
+    }
+
+    .file__info {
+      font-size: 12px;
+      line-height: 14px;
+      color: #b3bcc2;
+
+      .file__size {
+      }
+      .file__date {
+      }
+    }
+  }
+}

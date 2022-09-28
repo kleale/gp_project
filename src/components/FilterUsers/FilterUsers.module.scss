@@ -1,0 +1,80 @@
+@import url(../../fonts.scss);
+
+.FilterUsers {
+  position: absolute;
+  top: calc(100% + 10px); // 10px - padding шапки таблицы
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ccd9e0;
+  box-shadow: 0px 4px 4px rgba(0, 32, 51, 0.04), 0px 8px 24px rgba(0, 32, 51, 0.12);
+  padding: 16px;
+
+  .filterInput {
+    background: url(../../assets/images/magnifying-glass-filter-users.svg) no-repeat scroll 14px 14px;
+    background-position-y: center;
+    height: 40px;
+    padding: 8px;
+    padding-left: 37px;
+    gap: 10px;
+    border: 1px solid #96c8e4;
+    border-radius: 4px;
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .filterInput:focus {
+    border: 1px solid #f59e2a;
+    outline: none;
+  }
+
+  .selectButtons {
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 12px;
+
+    .selectButton {
+      background-color: #fff;
+      border: none;
+      font-family: "Inter-Regular";
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .filterResult {
+    border: 1px solid #b8cad5;
+    border-radius: 4px;
+    padding: 14px 12px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  .buttons {
+    display: flex;
+    column-gap: 12px;
+
+    .button {
+      font-family: "Inter-Regular";
+      font-size: 16px;
+      height: 40px;
+      width: 178px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .button__cancel {
+      background-color: #edf2f5;
+      color: #2f5e7b;
+    }
+
+    .button__apply {
+      background-color: #0078d2;
+      color: #fff;
+    }
+  }
+}

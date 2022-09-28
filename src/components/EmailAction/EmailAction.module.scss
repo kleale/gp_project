@@ -1,0 +1,69 @@
+@import url(../../fonts.scss);
+
+.EmailAction {
+  display: flex;
+  flex-direction: column;
+  max-width: 878px;
+  padding: 0 40px 0 60px;
+  border-radius: 20px;
+  border: 1px solid #a4abb1;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 28px;
+    .header__text {
+      font-family: "Inter-Bold";
+      font-size: 24px;
+      line-height: 36px;
+      color: #b3bcc2;
+    }
+  }
+
+  .content {
+    margin-bottom: 68px;
+
+    .title {
+      font-family: "Inter-Bold";
+      font-size: 48px;
+      line-height: 56px;
+      max-width: 700px;
+      margin-bottom: 33px;
+    }
+    .text {
+      font-family: "Inter-Regular";
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 42px;
+    }
+    .button {
+      display: block;
+      text-decoration: none;
+      max-width: 426px;
+      border: none;
+      background-color: #0078d2;
+      color: #fff;
+      font-family: "Inter-Regular";
+      font-size: 18px;
+      line-height: 48px;
+      padding: 0 24px;
+      border-radius: 4px;
+    }
+  }
+
+  .footer {
+    background-color: #ecf1f4;
+    margin-bottom: 57px;
+    border-radius: 32px;
+    padding: 34px 50px;
+    font-family: "Inter-Regular";
+    font-size: 18px;
+    line-height: 27px;
+    font-style: italic;
+    .footer__special {
+      font-family: "Inter-Bold";
+      border-bottom: 1px solid #000;
+    }
+  }
+}

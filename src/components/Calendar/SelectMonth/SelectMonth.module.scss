@@ -1,0 +1,59 @@
+@import url(../../../fonts.scss);
+
+.SelectMonth {
+  $monthWidth: 80px;
+  position: relative;
+  .currentMonth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "PT-Root-UI-Bold";
+    font-size: 14px;
+    line-height: 21px;
+    // width: $monthWidth;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1;
+  }
+
+  .monthSelect {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(0,0,0, 0.2);
+    background-color: #fff;
+    // width: 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px 0;
+    padding: 2px;
+    border-radius: 4px;
+    .month {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      text-align: center;
+      width: $monthWidth;
+      background-color: #fff;
+      font-family: "PT-Root-UI-Medium";
+      cursor: pointer;
+      user-select: none;
+      height: 21px;
+      border-radius: 4px;
+    }
+
+    .month:hover {
+      background-color: #0078d2;
+      color: #fff;
+
+    }
+
+    .month__selected {
+      background-color: #80bcde;
+      color: #fff;
+    }
+  }
+}

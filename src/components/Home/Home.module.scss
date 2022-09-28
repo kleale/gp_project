@@ -1,0 +1,140 @@
+@import url(../../fonts.scss);
+
+.Home {
+  background: no-repeat url(../../assets/images/home-bg.png);
+  background-size: 100% 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "PT-Root-UI-Regular";
+}
+
+.Home__header {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 35px;
+}
+
+.header__buttons {
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+}
+
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.headerButtonIcon {
+}
+
+.headerButtonIcon__burger {
+  width: 18;
+  height: 12px;
+}
+
+.headerButtonIcon__magnifying {
+  width: 20px;
+  height: 20px;
+}
+
+.platformDescription {
+}
+
+.platformDescription__title {
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 35px;
+  text-align: left;
+  width: 592px;
+  font-weight: 400;
+}
+
+.platformDescription {
+  
+}
+
+.platformDescription__text {
+  font-family: "PT-Root-UI-Medium";
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+  column-gap: 120px;
+  align-items: center;
+  min-height: 0;
+}
+
+.platformEnter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+  border: 1px solid #1e467e;
+  width: 648px;
+  height: 217px;
+  border-radius: 5px;
+}
+
+.platformEnter__button {
+  color: #fff;
+  background-color: #009245;
+  width: 236px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  outline: 5px solid rgba($color: #fff, $alpha: 0.5);
+  border-radius: 3px;
+  font-family: "Inter-Regular";
+}
+
+.beforeRegistion {
+}
+
+.beforeRegistration__head {
+  display: flex;
+  column-gap: 18px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.beforeRegistration__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "PT-Root-UI-Medium";
+  font-weight: 500;
+}
+
+.beforeRegistration__infoLinks {
+  font-size: 17px;
+  line-height: 26px;
+  padding-left: 20px;
+}
+
+.infoLink {
+  // color: #1e467e;
+  text-decoration: none;
+  font-family: "PT-Root-UI-Medium";
+  font-weight: 500;
+}
+
+.emptyFooter {
+  flex: 0 1 230px;
+}

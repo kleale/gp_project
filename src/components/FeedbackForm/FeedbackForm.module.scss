@@ -1,0 +1,46 @@
+@import url(../../fonts.scss);
+
+.FeedbackForm {
+  border: 1px solid #80bcde;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 24px 24px 29px;
+  flex-grow: 1;
+
+  .header {
+    font-family: "PT-Root-UI-Bold";
+    font-size: 18px;
+    margin-bottom: 21px;
+    color: #0079be;
+  }
+
+  .form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    line-height: 40px;
+    background-color: #0078d2;
+    border-radius: 4px;
+    width: 151px;
+    height: 40px;
+    align-self: flex-end;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+
+    .button__text {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import url(../../fonts.scss);
+
+.DatePicker {
+  position: relative;
+  .input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+    border: none;
+    outline: none;
+    appearance: none;
+    background-color: rgba(0,0,0,0);
+  }
+}

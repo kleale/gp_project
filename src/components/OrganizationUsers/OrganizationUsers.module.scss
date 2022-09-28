@@ -1,0 +1,164 @@
+@import url(../../fonts.scss);
+
+.OrganizationUsers {
+  display: flex;
+  .mainBlock {
+    min-height: 756px;
+    margin: 25px 12px 14px 20px;
+    border: 1px solid #80bcde;
+    border-radius: 2px;
+    padding: 20px;
+    flex-grow: 1;
+    .findUser > div {
+      flex-grow: 1;
+    }
+    .findUser {
+      display: flex;
+
+      .findUser__button {
+        border: 1px solid #0078d2;
+        background-color: #fff;
+        color: #0078d2;
+        font-family: "Inter-Regular";
+        font-size: 16px;
+        border-radius: 4px;
+        padding: 0 20px;
+        height: 40px;
+        margin: 0 10px;
+      }
+      margin-bottom: 20px;
+    }
+    .tableContainer {
+      border: 1px solid #80bcde;
+      border-radius: 4px;
+      .tableTitle {
+        font-family: "Inter-Regular";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        border-bottom: 1px solid #80bcde;
+        padding: 10px;
+      }
+      .table {
+        border-collapse: collapse;
+        width: 100%;
+        .table__head {
+          border-bottom: 1px solid #ccd9e0;
+
+          .th {
+            padding: 10px;
+            font-family: "Inter-Bold";
+          }
+
+          .th__fio {
+            text-align: start;
+            display: flex;
+            justify-content: space-between;
+
+            .tableButtons {
+              display: flex;
+              column-gap: 12px;
+              align-items: center;
+              position: relative;
+              .tableButton {
+                display: block;
+                cursor: pointer;
+              }
+            }
+          }
+          .th__role {
+            text-align: start;
+          }
+          .th__email {
+            text-align: end;
+            padding-right: 80px;
+          }
+        }
+
+        .rowUser {
+          .rowCellContent {
+            display: flex;
+            font-family: "Inter-Regular";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            padding: 8px 10px;
+            min-height: 21px;
+
+            .userOptions {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 6px;
+              background-color: #edf2f5;
+              border-radius: 4px;
+              margin-left: 42px;
+            }
+          }
+          td:last-of-type {
+            text-align: end;
+            .rowCellContent {
+              justify-content: flex-end;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .addUserBlock {
+    margin: 25px;
+    margin-left: 0;
+    padding: 20px 25px;
+    border: 1px solid #80bcde;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    min-width: 443px;
+    max-height: 330px;
+
+    .addUser__title {
+      color: #0079be;
+      font-family: "PT-Root-UI-Bold";
+      margin-bottom: 25px;
+    }
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      align-self: flex-end;
+      column-gap: 10px;
+
+      .button {
+        font-family: "Inter-Regular";
+        font-size: 16px;
+        height: 40px;
+        padding: 0 20px;
+      }
+
+      .button__cancel {
+        background-color: #fff;
+        color: #0079be;
+        border: 1px solid #0079be;
+        border-radius: 4px;
+      }
+
+      .button__add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 14px;
+        background-color: #0078d2;
+        border-radius: 4px;
+        color: #fff;
+        border: 1px solid #0078d2;
+      }
+    }
+  }
+}

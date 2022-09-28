@@ -1,0 +1,87 @@
+@import url(../../fonts.scss);
+
+.AuthentificatedHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 0 5px 0;
+  background-color: #fff;
+
+  .left {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 0 20px;
+
+    .logo {
+      margin-right: 15px;
+    }
+
+    .contractorName {
+      font-family: "PT-Root-UI-Bold";
+      font-size: 16px;
+      line-height: 25px;
+      // padding: 16px 0 14px 28px;
+      padding-left: 28px;
+      margin-top: 16px;
+      margin-bottom: 14px;
+      border-left: 1px solid #b8cad5;
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 0 20px;
+
+    .helpButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 15px;
+      background-color: #fff;
+      border: 1px solid #0079be;
+      padding: 0 20px;
+      border-radius: 4px;
+      cursor: pointer;
+
+      .helpButton__text {
+        color: #0079be;
+        font-family: "Inter-Regular";
+        font-size: 16px;
+        line-height: 40px;
+      }
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+
+      .avatarContainer {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #a6c1d5;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .fio {
+        font-family: "PT-Root-UI-Regular";
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+
+    .logout {
+      background-color: #fff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
